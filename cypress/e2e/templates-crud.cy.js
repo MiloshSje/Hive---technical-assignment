@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 describe("Templates", () => {
-  const username = "master-open-base-version_milosh.sjeklokja";
-  const password = "Test1234.";
+  const username = Cypress.env("username");
+  const password = Cypress.env("password");
 
   beforeEach(() => {
     cy.visit("https://productionportal.master.mediagenix.io");
